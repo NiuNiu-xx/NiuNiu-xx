@@ -1,0 +1,63 @@
+/* 详情页的样式 */
+.de_container{
+    margin-top: 20px;
+}
+/* 面包屑区域 */
+.crumb_wrap a{
+    margin-right: 10px;
+}
+.crumb_wrap{
+    height: 25px;
+}
+
+ /* 产品介绍模块  */
+ /* 一号盒子 预览区域 */
+.preview_wrap{
+    width: 400px;
+    height: 590px;
+}
+.preview_img{
+    height: 398px;
+    border:1px solid #ccc;
+}
+.preview_list{
+    position: relative;
+    height: 60px;
+    margin-top:60px;
+}
+.list_item{
+    width: 320px;
+    height: 60px;
+    /* 居中对齐 */
+    margin: 0 auto;
+}
+.list_item li{
+    float: left;
+    width: 56px;
+    height: 56px;
+    border:2px solid transparent;
+    margin: 0 2px;
+}
+.list_item li.current{
+    border:2px solid #c81623;
+}
+.arrow_prev,
+.arrow_next{
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 32px;
+}
+.arrow_prev{
+    left: 0;
+    background: url(../img/arrow-prev.png) no-repeat;
+}
+.arrow_next{
+    right: 0;
+    background: url(../img/arrow-next.png) no-repeat;
+}
+/* 二号盒子 详情 */
+.itemInfo_wrap{
+    width: 718px;
+    background-color: purple;
+}

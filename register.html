@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="w">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="registerarea">
+            <h3>
+                注册新用户
+                <em>我有账号，
+                    <a href="login.html">去登录</a>
+                </em>
+            </h3>
+
+            <div class="reg_form">
+                <form action="demo.php">
+                    <ul>
+                        <li>
+                            <!-- id 一样 可以 获取光标 -->
+                            <label for="tel">手机号：</label>
+                            <input type="text" class="inp" id="tel">
+                            <span class="error">
+                                <i class="error_icon"></i>
+                                手机号码格式不正确，请重新输入
+                            </span>
+                        </li>
+                        <li>
+                            <label for="num">短信验证码：</label>
+                            <input type="text" class="inp" id="num">
+
+                        </li>
+                        <li>
+                            <label for="password">登录密码：</label>
+                            <input type="text" class="inp" id="password">
+                            <span class="success">
+                                <i class="success_icon"></i>
+                                恭喜您输入正确
+                            </span>
+                        </li>
+                        <li class="safe">
+                            安全程度
+                            <em class="ruo">弱</em>
+                            <em class="zhong">中</em>
+                            <em class="qiang">强</em>
+                        </li>
+                        <li>
+                            <label for="again">确认密码：</label>
+                            <input type="text" class="inp" id="again">
+                            <span class="error">
+                                <i class="error_icon"></i>
+                                密码不一致，请重新输入
+                            </span>
+                        </li>
+                        <li class="agree">
+                            <input type="checkbox">
+                            同意协议并注册
+                            <a href="#">《拼刀刀用户协议》</a>
+                        </li>
+                        <li>
+                            <input type="submit" value="完成注册" class="over">
+                        </li>
+
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="w">
+                <!-- 版权模块 -->
+                <p class="links">
+                    关于我们 | 联系我们 | 联系客服 | 商家入驻 |
+                    营销中心 | 手机拼刀刀 |友情链接 | 销售联盟 |
+                    拼刀刀社区 | 拼刀刀公益 | English Site | Contact
+                </p>
+                <p class="copyright">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br>
+                    京ICP备08001421号京公网安备110108007702
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

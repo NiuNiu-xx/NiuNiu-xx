@@ -18,7 +18,7 @@
     font-weight: normal;
     font-style: normal;
 }
-.icomoon{
+.fr .icomoon{
     font-family: 'icomoon';
     font-size: 16px;
     line-height: 27px;
@@ -36,7 +36,7 @@
     width: 1px;
     height: 12px;
     background-color: #666;
-    margin: 8px 12px 0;
+    margin: 9px 12px 0;
 }
 
 /* 顶部快捷导航 shortcut */

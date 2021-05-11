@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/common.css">
     <!-- 引入首页样式 -->
     <link rel="stylesheet" href="css/detail.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/detail.js"></script>
 </head>
 
 <body>
@@ -87,10 +89,12 @@
             <a href="#">家居日用</a>
         </div>
         <div class="shopcar">
-            <i class="car"></i>
-            我的购物车
-            <i class="arrow"></i>
-            <i class="count">80</i>
+            <a href="shopcar.html">
+                <i class="car"></i>
+                我的购物车
+                <i class="arrow"></i>
+                <i class="count">80</i>
+            </a>
         </div>
     </div>
     <div class="nav">
@@ -147,6 +151,10 @@
             <div class="preview_wrap fl">
                 <div class="preview_img">
                     <img src="upload/s3.png" alt="">
+                    <div class="mask"></div>
+                    <div class="big">
+                        <img src="upload/big.jpg" alt="" class="bigImg">
+                    </div>
                 </div>
                 <div class="preview_list">
                     <a href="#" class="arrow_prev">
@@ -292,7 +300,7 @@
                     </ul>
                 </div>
                 <div class="detail_tab_con">
-                    <div class="item">
+                    <div class="item" style="display:block;">
                         <ul class="item_info">
                             <li>分辨率：1920*1080(FHD)</li>
                             <li>后置摄像头：1200万像素</li>
@@ -314,14 +322,112 @@
                         <img src="upload/detail_img2.jpg" alt="">
                         <img src="upload/detail_img3.jpg" alt="">
                     </div>
-                    <!-- <div class="item">规格与包装</div>
-                    <div class="item">售后保障</div>
-                    <div class="item">商品评价（50000）</div>
-                    <div class="item">手机社区</div> -->
+                    <!-- 规格与包装 -->
+                    <div class="item">
+                        <ul class="item_info">
+                            <li>
+                                <h3>主体</h3>
+                                产品名称：Redmi 9A
+                                上市月份：7月
+                                上市年份：2020年
+                                品牌：小米（MI）
+                                首销日期：以官网信息为准
+                            </li><br><br>
+                            <li>
+                                <h3>基本信息</h3>
+                                机身宽度（mm）：77.07
+                                机身厚度（mm）：9.0
+                                机身重量（g）：194
+                                运营商标志或内容：定制机往往会有运营商的元素在手机的某些位置，该属性会介绍这些元素出现的位置。
+
+                            </li><br><br>
+
+                            <li>
+                                <h3>主芯片</h3>
+                                CPU核数：八核
+                                CPU品牌：联发科（MTK）
+                            </li><br><br>
+
+                            <li>
+                                <h3>存储</h3>
+                                最大存储扩展容量：512GB
+                            </li><br><br>
+                            <li>
+                                <h3>屏幕</h3>
+                                屏幕材质类型：其他
+                                屏幕刷新率：其他
+                                主屏幕尺寸（英寸）：6.53英寸
+                            </li><br><br>
+                        </ul>
+                        <img src="upload/detail_img1.jpg" alt="">
+                        <img src="upload/detail_img2.jpg" alt="">
+                    </div>
+                    <!-- 售后保障 -->
+                    <div class="item">
+                        <ul class="item_info">
+                            <strong>厂家服务</strong>
+                            <li>
+                                本商品质保周期为1年质保，在此时间范围内可提交维修申请，具体请以厂家服务为准。
+                                如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！<br />(注:如厂家在商品介绍中有售后保障的说明,则此商品按照厂家说明执行售后保障服务。)
+                                您可以查询本品牌在各地售后服务中心的联系方式，<a target='#'>请点击这儿查询......</a><br /><br />
+
+                                售后服务电话：100-100-1234
+                            </li>
+                            <br /><br />
+                            <strong>拼刀刀承诺</strong>
+                            <li>
+                                拼刀刀平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！<br />
+                                注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                            </li><br /><br />
+                            <strong> 正品行货 </strong>
+
+                            <li>拼刀刀商城向您保证所售商品均为正品行货，拼刀刀自营商品开具机打发票或电子发票。</li>
+                            <br /><br />
+                            <strong>无忧退货</strong>
+
+                            <li>客户购买拼刀刀自营商品7日内（含7日，自客户收到商品之日起计算），在保证商品完好的前提下，可无理由退货。（部分商品除外，详情请见各商品细则）</li>
+                        </ul>
+                    </div>
+                    <!-- 商品评价（50000） -->
+                    <div class="item">
+                        <ul class="item_info">
+                            <li>
+                                <h3>商品评价</h3>
+                            </li>
+                            <br><br>
+                            <li>
+                                全部评论
+                                晒图
+                                好评
+                                中评
+                                差评
+                            </li>
+
+                            <br><br>
+                            <li>试用报告</li>
+                            <br><br>
+                            <li>推荐排序</li>
+
+                        </ul>
+                    </div>
+                    <!-- 手机社区 -->
+                    <div class="item">
+                        <ul class="item_info">
+                            <h3>商品问答</h3>
+                            <br><br>
+                            <li>
+                                <strong>哪种颜色好看？</strong><br>
+                                透明的
+                            </li><br>
+                            <li>
+                                <strong>可以刷抖音吗 年轻人适合用吗</strong><br>
+                                年轻人不适合，像素低
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- 底部 -->
@@ -430,7 +536,9 @@
                     拼刀刀社区 | 拼刀刀公益 | English Site | Contact
                 </p>
                 <p class="mod_copyright_info">
-                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br>
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱:
+                    zhanghj+itcast.cn
+                    <br>
                     京ICP备08001421号京公网安备110108007702
                 </p>
             </div>
@@ -438,5 +546,6 @@
 
     </div>
 </body>
+
 
 </html>
